@@ -1,0 +1,157 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    background: url(../images/bg-main-desktop.png) 50% 0;
+}
+
+.header {
+    grid-area: header;
+    padding: 5% 10%;
+    position: relative;
+}
+
+.bg-pattern {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.main {
+    grid-area: main;
+}
+
+.intro {
+    padding: 5% 15% 5% 10%;
+}
+
+.intro h1 {
+    font-size: 5.5rem;
+    color: var(--light-black);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 20px;
+    color: var(--light-black);
+    padding-right: 20%;
+}
+
+.premium-section {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    margin: 10% 10% 5% 10%;
+    padding: 70px;
+    border-radius: 10px;
+    background: var(--light-black) url(../images/bg-pattern-2.svg) top center no-repeat;
+}
+
+.premium-section > img:first-child {
+    width: 30%;
+    position: relative;
+    top: -200px;
+}
+
+.premium-section article {
+    background: var(--orange);
+    padding: 50px 30px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -150px;
+}
+
+.premium-section h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.premium-section p {
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+.premium-section .price {
+    font-size: 4rem;
+}
+
+.premium-section .price span {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    font: 700 1rem 'IBM Plex Sans';
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ios {
+    background: var(--light-black);
+}
+
+.ios:hover {
+    background: var(--blue);
+}
+
+.android {
+    background: var(--white);
+}
+
+.android:hover {
+    background: var(--yellow);
+}
+
+.android p {
+    color: var(--light-black);
+}
+
+.buttons p {
+    margin-bottom: 0;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > p {
+    color: var(--light-black);
+}
+
+.footer > p span {
+    font-weight: 700;
+}
+
+.social-medias {
+    display: flex;
+    gap: 10px;
+}
+
+.social-medias a {
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-medias a:hover {
+    color: var(--orange);
+}
